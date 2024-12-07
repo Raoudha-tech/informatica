@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /
+    background-color: #f7f7f7;
+}
+
+
+nav {
+    background-color: #87bd40; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+    color: #2d572c; 
+}
+
+
+#hero {
+    background: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/zoo-1992358_1280.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold; 
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ae7f4d; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+
+#hero a:hover {
+    background-color: #8f6c3f; 
+
+
+#restaurants table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#restaurants th, #restaurants td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#restaurants th {
+    background-color: #87bd40; 
+    color: white;
+    font-weight: bold;
+}
+
+#restaurants tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+#restaurants td {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #87bd40; 
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;

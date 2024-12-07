@@ -1,22 +1,281 @@
 <!DOCTYPE html>
-<html> 
-<head> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zootopia</title>
-    <link> href"=style.css" type="text/css" rel="stylesheet"
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000; 
+            background-color: #f7f7f7;
+        }
+
+        
+        nav {
+            background-color: #87bd40; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+       
+        #hero {
+            background: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/zoo-1992358_1280.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        #hero a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5f310e; 
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #hero a:hover {
+            background-color: #4d270b; 
+        }
+
+       
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        
+        #tickets table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        #tickets th, #tickets td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #tickets th {
+            background-color: #2d572c;
+            color: white;
+        }
+
+        #tickets td {
+            background-color: #f9f9f9;
+        }
+
+        
+        footer {
+            background-color: #87bd40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
-<body> 
-<header>
-<div class="main">  
-<ul> 
-<li> </li>
-</ul>
-</div>
+<body>
+    
+    <nav>
+        <a href="#hero" aria-label="Ga naar de homepage" class="logo">Zootopia Dierentuin</a>  
+        <a href="#about" aria-label="Ga naar ons doel">Ons doel</a>
+        <a href="#map" aria-label="Bekijk de plattegrond">Plattegrond</a>
+        <a href="#restaurants" aria-label="Bekijk de restaurants">Restaurants</a>
+        <a href="#tickets" aria-label="Bekijk tickets en prijzen">Tickets</a>
+        <a href="#contact" aria-label="Neem contact op">Contact</a>
+    </nav>
 
-</header>
+    
+    <section id="hero">
+        <h1>Ontdek, leer en bewonder.</h1>
+        <p>Maak het verschil - jouw bezoek draagt direct bij aan onze missie.</p>
+        <a href="#tickets">Koop Tickets</a>
+    </section>
+
+     
+        <section id="about">
+            <h2>Ons doel</h2>
+            <p>Bij Zootopia draait alles om het bieden van een unieke, leerzame ervaring voor het hele gezin. Ons doel is om bezoekers van alle leeftijden te inspireren, te informeren en te verbinden met de wonderen van de natuur. We bieden een veilige en toegankelijke omgeving waar iedereen de fascinatie van dieren en natuur kan ontdekken. Daarnaast zetten we ons in voor het behoud van biodiversiteit en het beschermen van bedreigde diersoorten. Of je nu wilt leren, genieten of bijdragen aan natuurbescherming, bij ons vind je altijd iets nieuws en spannends.</p>
+        </section>
+
+       
+        <section id="map">
+            <h2>Plattegrond</h2>
+            <p>Bij aankomst in Blijdorp ontvangt u gratis een plattegrond van ons. Het dierentuin bevind zich met een restaurant en een binnenspeeltuin voor de kinderen. het binnenspeeltuin is gemaakt pauzeplek voor de ouders en een speelruimte voor de kinderen. Op de kaart die u zult krijgen van ons staat waar de restaurants, toilletten en de binnenspeelplek zich bevind.</p>
+            <img src="https://cdn.pixabay.com/photo/2016/11/22/07/09/map-1841521_1280.jpg" 
+             alt="Plattegrond van de dierentuin" 
+             style="width: 100%; max-width: 600px; margin: 1rem auto;">
+        </section>
+
+        
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <p>Geniet van een verscheidenheid aan maaltijden en snacks in onze restaurants. Kies voor fastfood bij Tenur of snacks en slushpuppy's bij Kadoer, gelegen naast de speelruimte.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Prijs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Slush Puppie</td>
+                        <td>€2,50</td>
+                    </tr>
+                    <tr>
+                        <td>Popcorn/Chips</td>
+                        <td>€1,50</td>
+                    </tr>
+                    <tr>
+                        <td>Patatje friet (groot)</td>
+                        <td>€6,00</td>
+                    </tr>
+                    <tr>
+                        <td>Friet</td>
+                        <td>€4,00</td>
+                    </tr>
+                    <tr>
+                        <td>Turkse pizza</td>
+                        <td>€4,00</td>
+                    </tr>
+                    <tr>
+                        <td>Patatje friet (klein)</td>
+                        <td>€3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Frikandelbroodje</td>
+                        <td>€3,00</td>
+                    </tr>
+                    <tr>
+                        <td>Smoothies</td>
+                        <td>€3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Frisdrank</td>
+                        <td>€2,00</td>
+                    </tr>
+                    <tr>
+                        <td>Mini donuts</td>
+                        <td>€3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Waterijsjes</td>
+                        <td>€3,00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+       
+        <section id="tickets">
+            <h2>Tickets & Prijzen</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Prijs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>volwassenen (16+)</td>
+                        <td>€18,00</td>
+                    </tr>
+                    <tr>
+                        <td>kinderen (3-11)</td>
+                        <td>€12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Senioren (65+)</td>
+                        <td>€14,00</td>
+                    </tr>
+                    <tr>
+                        <td>Gezinsticket (2 volwassenen + 2 kinderen)</td>
+                        <td>€50,00</td>
+                    </tr>
+                    <tr> 
+                        <td>Seizoenspas (volwassenen)</td>
+                        <td>€65,00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Seizoenspas (kinderen)</td>
+                        <td>€45,00</td> 
+                    </tr>
+                    <tr> 
+                        <td>Seizoenspas (gezinsabonnement)</td>
+                        <td>€160,00</td>
+                        <tr> <td>Studenten (12-18 jaar)   </td>
+                            <td> €14,00</td> </tr>
+                         <tr> <td>Dierenvoeden met verzorgers</td> <td> €10,00</td> </tr>
 
 
-</body>
-  
-  
-   
-</html>
+                                    </tbody>
+                                </table>
+   </section>
+ 
+ <section id="contact">
+       <h2>Contacteer ons</h2> 
+ <p>Neem persoonlijk contact op met blijdorp</p> <p>Zootopia is ma t/m vr telefonish bereikbaar. We helpen je graag elke dag 8:30-18:00</p>
+    </p>
+   <p>telefoonnummer: 06 09871456</p>
+ <p>Email: info@zootopia.nl</p>
+ <p>Address: Zootopiaweg 1, 3013 AB Rotterdam, Netherlands</p>
+    </section>
+
+ 
+     <footer>
+   <p>© 2024 Zootopia Dierentuin. Alle rechten voorbehouden.</p>
+</footer>
+                        </body>
+                        </html>    
